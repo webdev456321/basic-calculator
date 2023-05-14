@@ -19,21 +19,24 @@ function submitme(){
     }
     else{
     p.innerHTML=''
-    form.innerHTML=`<label for='selection'>Do you want to: </label>
-    Add
-    <input type='radio' name='select' value='add' id='selection'>
+    form.innerHTML=`
+     Add
+    <input type='radio' name='select' value='add' id='selection' style="margin-bottom:20px;">
     Subtract
-    <input type='radio' name='select' value='subt' id='selection'>
-    Multiply
-    <input type='radio' name='select' value='mult' id='selection'>
+    <input type='radio' name='select' value='subt' id='selection' style="margin-bottom:20px;">
+     Multiply
+    <input type='radio' name='select' value='mult' id='selection' style="margin-bottom:20px;">
     Divide
-    <input type='radio' name='select' value='div' id='selection'>
+    <input type='radio' name='select' value='div' id='selection' style="margin-bottom:20px;">
     <a href="index.html"><input type='button' value='Go to front page'></a>`
     var sel0=document.querySelectorAll('input')[0];
     var sel1=document.querySelectorAll('input')[1];
     var sel2=document.querySelectorAll('input')[2];
     var sel3=document.querySelectorAll('input')[3];
+    form.style.fontSize='1.5em';
+    form.style.marginRight="100px";
 
+   
 
     sel0.addEventListener('click',()=>{
         p.textContent=`${Number(inp1.value)} + ${Number(inp2.value)} = ${adding(Number(inp1.value),Number(inp2.value))}`;
@@ -59,5 +62,4 @@ function submitme(){
 }
 
 sub.addEventListener('click',submitme)
-
 
