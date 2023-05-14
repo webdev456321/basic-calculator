@@ -36,6 +36,7 @@ function submitme(){
     form.style.fontSize='1.5em';
     var a=document.querySelectorAll('a')[0];
     a.style.marginLeft="130px";
+    p.style.fontSize="3em";
 
     sel0.addEventListener('click',()=>{
         p.textContent=`${Number(inp1.value)} + ${Number(inp2.value)} = ${adding(Number(inp1.value),Number(inp2.value))}`;
