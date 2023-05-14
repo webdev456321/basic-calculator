@@ -44,7 +44,6 @@ num4.addEventListener('click',()=>{
 })
 num5.addEventListener('click',()=>{
     inp1.value=`${inp1.value}*`
-   
 })
 num6.addEventListener('click',()=>{
     inp1.value=inp1.value+4
@@ -91,7 +90,5 @@ num16.addEventListener('click',()=>{
 
 res.addEventListener('click',()=>{
     p.textContent=''
-    inp2=0
     inp1.value=0
-    p1.textContent=''
 })
