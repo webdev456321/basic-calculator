@@ -1,5 +1,10 @@
 body{
     background:linear-gradient(to right,rgba(255, 213, 0, 0.4),rgba(255, 0, 0, 0.571));
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+
+
 }
 h1{
     font-size:3em;
@@ -10,7 +15,7 @@ h1{
     padding:30px;
     font-family:cursive;
     font-weight:100;
-    margin-left:50px;
+    margin-bottom:60px;
 
 }
 h1:hover{
@@ -18,18 +23,16 @@ h1:hover{
     transition:1s;
     background:linear-gradient(rgba(0, 255, 255, 0.486),rgba(128, 128, 128, 0.701));
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.container{
-    display:flex;
-    justify-content:center;
+    box-shadow:2px 2px 2px 2px red;
 }
 form{
-    display:flex;
-    justify-content:space-evenly;
     color:rgb(47, 92, 255);
     font-style:italic;
     font-family:sans-serif;
-    padding-left:100px;
+    padding-right:20px;
+    margin-top:100px;
+
+
 }
 h2{
     font-weight:500;
