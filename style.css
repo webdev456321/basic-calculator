@@ -1,0 +1,41 @@
+body{
+    background:linear-gradient(to right,rgba(255, 213, 0, 0.4),rgba(255, 0, 0, 0.571));
+}
+h1{
+    font-size:3em;
+    font-style:italic;
+    color:rgba(127, 255, 212, 0.715);
+    border:0.5px solid blue;
+    border-radius:20px;
+    padding:30px;
+    font-family:cursive;
+    font-weight:100;
+
+}
+h1:hover{
+    transform:rotate(-360deg);
+    transition:1s;
+    background:linear-gradient(rgba(0, 255, 255, 0.486),rgba(128, 128, 128, 0.701));
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    display:flex;
+    justify-content:center;
+}
+form{
+    display:flex;
+    justify-content:space-evenly;
+    font-size:2.5em;
+    color:greenyellow;
+    font-style:italic;
+    font-family:sans-serif;
+}
+p{
+    text-align:center;
+    font-size:2em;
+}
+p:hover{
+    transform:scale(1.2);
+    transition:2s;
+    font-size:1em;
+}
