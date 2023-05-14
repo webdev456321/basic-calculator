@@ -43,7 +43,7 @@ num4.addEventListener('click',()=>{
   inp1.value=`${inp1.value}+`
 })
 num5.addEventListener('click',()=>{
-    inp1.value=`${inp1.value}x`
+    inp1.value=`${inp1.value}*`
    
 })
 num6.addEventListener('click',()=>{
