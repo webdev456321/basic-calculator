@@ -4,6 +4,7 @@ var inp1=document.querySelectorAll('input')[0];
 var inp2=document.querySelectorAll('input')[1];
 var sub=document.querySelectorAll('input')[2];
 var rest=document.querySelectorAll('input')[3];
+// var h1=document.querySelectorAll('div')[0];
 var adding=(a,b)=>a+b
 var subt=(a,b)=>a-b
 var mult=(a,b)=>a*b
@@ -11,7 +12,6 @@ var divide=(a,b)=>a/b
 form.style.fontFamily='cursive'
 p.style.fontStyle='italic';
 p.style.fontFamily="Trebuchet MS"
-// p.style.opacity='0.6'
 p.style.color='red'
 function submitme(){
     if((isNaN(inp1.value)===true || isNaN(inp2.value)===true) || (inp1.value== '' || inp2.value=='')){
@@ -34,9 +34,9 @@ function submitme(){
     var sel2=document.querySelectorAll('input')[2];
     var sel3=document.querySelectorAll('input')[3];
     form.style.fontSize='1.5em';
-    form.style.marginRight="100px";
-
-   
+    var a=document.querySelectorAll('a')[0];
+    a.style.marginLeft="130px";
+    form.style.marginTop="200px"; 
 
     sel0.addEventListener('click',()=>{
         p.textContent=`${Number(inp1.value)} + ${Number(inp2.value)} = ${adding(Number(inp1.value),Number(inp2.value))}`;
