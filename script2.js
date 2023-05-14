@@ -1,65 +1,97 @@
 var p=document.getElementsByTagName('p')[0];
 var form=document.getElementsByTagName('form')[0];
 var inp1=document.querySelectorAll('input')[0];
-var inp2=document.querySelectorAll('input')[1];
-var sub=document.querySelectorAll('input')[2];
-var rest=document.querySelectorAll('input')[3];
-// var h1=document.querySelectorAll('div')[0];
-var adding=(a,b)=>a+b
-var subt=(a,b)=>a-b
-var mult=(a,b)=>a*b
-var divide=(a,b)=>a/b
+var num1=document.querySelectorAll('button')[0];
+var num2=document.querySelectorAll('button')[1];
+var num3=document.querySelectorAll('button')[2];
+var num4=document.querySelectorAll('button')[3];
+var num5=document.querySelectorAll('button')[4];
+var num6=document.querySelectorAll('button')[5];
+var num7=document.querySelectorAll('button')[6];
+var num8=document.querySelectorAll('button')[7];
+var num9=document.querySelectorAll('button')[8];
+var num10=document.querySelectorAll('button')[9];
+var num11=document.querySelectorAll('button')[10];
+var num12=document.querySelectorAll('button')[11];
+var num13=document.querySelectorAll('button')[12];
+var num14=document.querySelectorAll('button')[13];
+var num15=document.querySelectorAll('button')[14];
+var res=document.querySelectorAll('input')[1];
+var h1=document.querySelectorAll('div')[0];
+var bracket1=document.querySelectorAll('button')[15];
+var bracket2=document.querySelectorAll('button')[16];
+var num16=document.querySelectorAll('button')[17];
 form.style.fontFamily='cursive'
 p.style.fontStyle='italic';
 p.style.fontFamily="Trebuchet MS"
 p.style.color='red'
-function submitme(){
-    if((isNaN(inp1.value)===true || isNaN(inp2.value)===true) || (inp1.value== '' || inp2.value=='')){
-    p.textContent='Not possible to calculate! Please enter correct value'
-    }
-    else{
-    p.innerHTML=''
-    form.innerHTML=`
-     Add
-    <input type='radio' name='select' value='add' id='selection' style="margin-bottom:20px;">
-    Subtract
-    <input type='radio' name='select' value='subt' id='selection' style="margin-bottom:20px;">
-     Multiply
-    <input type='radio' name='select' value='mult' id='selection' style="margin-bottom:20px;">
-    Divide
-    <input type='radio' name='select' value='div' id='selection' style="margin-bottom:20px;">
-    <a href="index.html"><input type='button' value='Go to front page'></a>`
-    var sel0=document.querySelectorAll('input')[0];
-    var sel1=document.querySelectorAll('input')[1];
-    var sel2=document.querySelectorAll('input')[2];
-    var sel3=document.querySelectorAll('input')[3];
-    form.style.fontSize='1.5em';
-    var a=document.querySelectorAll('a')[0];
-    a.style.marginLeft="130px";
-    p.style.fontSize="3em";
+p.style.alignSelf='center';
+inp1.value=''
+p.textContent=''
+num16.style.marginLeft='110px';
 
-    sel0.addEventListener('click',()=>{
-        p.textContent=`${Number(inp1.value)} + ${Number(inp2.value)} = ${adding(Number(inp1.value),Number(inp2.value))}`;
-    })
-    sel1.addEventListener('click',()=>
-    {
-        p.textContent=`${Number(inp1.value)} - ${Number(inp2.value)} = ${subt(Number(inp1.value),Number(inp2.value))}`;
-    }
-    )
-    sel2.addEventListener('click',()=>
-    {
-        p.textContent=`${Number(inp1.value)} x ${Number(inp2.value)} = ${mult(Number(inp1.value),Number(inp2.value))}`;
-    }
-    )
-    sel3.addEventListener('click',()=>
-    {
-        p.textContent=`${Number(inp1.value)} / ${Number(inp2.value)} = ${divide(Number(inp1.value),Number(inp2.value))}`    }
-    )
-    }
-    var front=document.getElementsByTagName('input')[4]
-    front.style.padding='20px'
-    
-}
+num1.addEventListener('click',()=>{
+    inp1.value=inp1.value+1
+})
+num2.addEventListener('click',()=>{
+    inp1.value=inp1.value+2
+})
+num3.addEventListener('click',()=>{
+    inp1.value=inp1.value+3
+})
+num4.addEventListener('click',()=>{
+  inp1.value=`${inp1.value}+`
+})
+num5.addEventListener('click',()=>{
+    inp1.value=`${inp1.value}X`
+   
+})
+num6.addEventListener('click',()=>{
+    inp1.value=inp1.value+4
+})
+num7.addEventListener('click',()=>{
+    inp1.value=inp1.value+5
+})
+num8.addEventListener('click',()=>{
+    inp1.value=inp1.value+6
+})
+num9.addEventListener('click',()=>{
+    inp1.value=`${inp1.value}-`
 
-sub.addEventListener('click',submitme)
+})
+num10.addEventListener('click',()=>{
+    inp1.value=`${inp1.value}/`
+})
+num11.addEventListener('click',()=>{
+    inp1.value=inp1.value+7
+})
+num12.addEventListener('click',()=>{
+    inp1.value=inp1.value+8
+})
+num13.addEventListener('click',()=>{
+    inp1.value=inp1.value+9
+})
+num14.addEventListener('click',()=>{
+    inp1.value=inp1.value+0
+})
+num15.addEventListener('click',()=>{
+    inp1.value=`${inp1.value}%`
 
+})
+bracket1.addEventListener('click',()=>{
+    inp1.value=inp1.value+'('
+})
+bracket2.addEventListener('click',()=>{
+    inp1.value=inp1.value+')'
+})
+num16.addEventListener('click',()=>{
+    p.textContent=`${inp1.value}=${eval(inp1.value)}`
+    inp1.value=''
+})
+
+res.addEventListener('click',()=>{
+    p.textContent=''
+    inp2=0
+    inp1.value=0
+    p1.textContent=''
+})
