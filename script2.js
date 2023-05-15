@@ -84,9 +84,8 @@ num16.addEventListener('click',()=>{
     if(inp2.value===''){
         inp2.value=inp2.value+'NOT POSSIBLE TO CALCULATE'
     }
-    else{
-        inp2.value=eval(inp1.value)
-    }
+    inp2.value=eval(inp1.value)
+    
 })
 
 res.addEventListener('click',()=>{
