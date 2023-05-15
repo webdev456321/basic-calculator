@@ -9,12 +9,10 @@ body{
 h1{
     font-size:3em;
     font-style:italic;
-    color:rgba(127, 255, 212, 0.715);
     border:0.5px solid blue;
     border-radius:20px;
     padding:30px;
-    font-family:cursive;
-    font-weight:100;
+    font-weight:50;
     margin-bottom:60px;
 
 }
@@ -26,18 +24,26 @@ h1:hover{
     box-shadow:2px 2px 2px 2px red;
 }
 form{
-    color:rgb(47, 92, 255);
     font-style:italic;
-    font-family:sans-serif;
-    padding-right:20px;
     margin-top:100px;
-    background:linear-gradient(to left,rgba(255, 255, 0,0.4),rgba(0, 255, 255,0.3),rgba(165, 42, 42,0.5));
+    background:linear-gradient(to left,transparent,rgb(128, 128, 128));
     border-radius:20px;
-    padding-left:20px;
     padding-top:10px;
 
 }
-
+.move{
+    background-color:rgba(0, 0, 0, 0.701);
+    border-radius:20px;
+    border:0.5px solid black;
+    border-width:30px;
+    margin-left:40px;
+    padding-right:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.move2{
+    margin-left:60px;
+}
 
 div{
     align-self:center;
@@ -45,11 +51,5 @@ div{
 }
 .one{
     padding:10px;
-}
-
-p{
-    text-align:bottom;
-    font-size:2em;
-    padding-left:20px;
 }
 
