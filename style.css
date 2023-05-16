@@ -6,7 +6,6 @@ body{
 h1{
     font-size:3em;
     font-style:italic;
-    border:0.5px solid blue;
     border-radius:20px;
     padding:30px;
     font-weight:50;
@@ -15,33 +14,34 @@ h1{
 
 }
 h1:hover{
-    transform:rotate(-360deg);
+    transform:rotate(-10deg);
     transition:1s;
-    background:linear-gradient(rgba(0, 255, 255, 0.486),rgba(128, 128, 128, 0.701));
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    box-shadow:2px 2px 2px 2px red;
+    box-shadow:2px 2px 2px 2px rgb(0, 255, 17);
+    background:linear-gradient(transparent,rgb(255, 192, 192));
 }
 form{
     font-style:italic;
-    background:linear-gradient(to left,transparent,rgba(128, 128, 128, 0.61));
-    border-radius:20px;
+    background:linear-gradient(to left,rgba(128, 128, 128, 0.61),transparent,rgba(128, 128, 128, 0.61));
+    border-radius:30px;
     padding-top:10px;
     padding-left:20px;
+    box-shadow:2px 2px 2px 2px rgb(173, 153, 174);
 
 }
 .move{
     background-color:rgba(0, 0, 0, 0.701);
     border-radius:20px;
     border:0.5px solid black;
-    border-width:30px;
-    margin-left:30px;
-    padding-right:15px;
+    border-width:25px;
+    margin-left:25px;
+    padding-right:20px;
     padding-top:10px;
     padding-bottom:10px;
   
 }
 .move2{
-    margin-left:48px;
+    margin-left:40px;
 }
 
 div{
@@ -50,6 +50,13 @@ div{
 }
 .one{
     padding:10px;
+}
+footer{
+    font-style:italic;
+    color:aliceblue;
+    text-align:center;
+    
+
 }
 
 
