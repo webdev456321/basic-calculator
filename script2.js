@@ -18,12 +18,12 @@ var num14=document.querySelectorAll('button')[13];
 var num15=document.querySelectorAll('button')[14];
 var res=document.querySelectorAll('input')[2];
 var h1=document.querySelectorAll('div')[0];
-var bracket1=document.querySelectorAll('button')[15];
-var bracket2=document.querySelectorAll('button')[16];
-var num16=document.querySelectorAll('button')[17];
+var num16=document.querySelectorAll('button')[15];
+var bracket1=document.querySelectorAll('button')[16];
+var bracket2=document.querySelectorAll('button')[17];
+
 form.style.fontFamily='cursive'
 inp1.value=''
-num16.style.marginLeft='125px';
 inp2.value=''
 num1.addEventListener('click',()=>{
     inp1.value=inp1.value+1
@@ -80,16 +80,16 @@ bracket1.addEventListener('click',()=>{
 bracket2.addEventListener('click',()=>{
     inp1.value=inp1.value+')'
 })
+
 num16.addEventListener('click',()=>{
     if(inp2.value===''){
-        inp2.value=inp2.value+'NOT POSSIBLE TO CALCULATE'
+        inp2.value=inp2.value+'Not Possible to Calculate'
     }
     inp2.value=eval(inp1.value)
-    
 })
 
+
 res.addEventListener('click',()=>{
-    p.textContent=''
     inp1.value=0
     p1.textContent=''
     inp2.value=0
