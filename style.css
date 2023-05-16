@@ -25,23 +25,23 @@ form{
     background:linear-gradient(to left,rgba(128, 128, 128, 0.61),transparent,rgba(128, 128, 128, 0.61));
     border-radius:30px;
     padding-top:10px;
-    padding-left:20px;
     box-shadow:2px 2px 2px 2px rgb(173, 153, 174);
 
 }
 .move{
-    background-color:rgba(0, 0, 0, 0.701);
+    background:linear-gradient(transparent,rgba(86, 86, 86, 0.701));
     border-radius:20px;
-    border:0.5px solid black;
-    border-width:25px;
+    border:2px solid rgb(0, 0, 0);
+    box-shadow:1px 1px 1px 1px grey;
     margin-left:25px;
-    padding-right:20px;
+    padding-right:10px;
     padding-top:10px;
     padding-bottom:10px;
+    padding-left:5px;
   
 }
 .move2{
-    margin-left:40px;
+    margin-left:35px;
 }
 
 div{
@@ -55,7 +55,6 @@ footer{
     font-style:italic;
     color:aliceblue;
     text-align:center;
-    
 
 }
 
