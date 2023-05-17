@@ -41,12 +41,7 @@ form{
   
 }
 .move2{
-     box-shadow:1px 1px 1px 1px black;
-    background:linear-gradient(to right,transparent,grey,transparent,grey);
     margin-left:43px;
-    margin-bottom:20px;
-    padding-top:15px;
-    padding-left:5px;
 }
 
 div{
