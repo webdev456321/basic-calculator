@@ -21,11 +21,14 @@ var res=document.querySelectorAll('input')[2];
 var h1=document.querySelectorAll('div')[0];
 var num16=document.querySelectorAll('button')[17];
 var bracket1=document.querySelectorAll('button')[16];
-var bracket2=document.querySelectorAll('button')[18];
+var dot=document.querySelectorAll('button')[18];
+var bracket2=document.querySelectorAll('button')[19];
 
 form.style.fontFamily='cursive'
 inp1.value=''
 inp2.value=''
+
+
 num1.addEventListener('click',()=>{
     inp1.value=inp1.value+1
 })
@@ -75,6 +78,9 @@ num15.addEventListener('click',()=>{
     inp1.value=`${inp1.value}%`
 
 })
+dot.addEventListener('click',()=>{
+    inp1.value=`${inp1.value}.`
+})
 bracket1.addEventListener('click',()=>{
     inp1.value=inp1.value+'('
 })
@@ -97,3 +103,6 @@ res.addEventListener('click',()=>{
 de.addEventListener('click',()=>{
     inp1.value=inp1.value.slice(0,-1)
 })
+
+
+
