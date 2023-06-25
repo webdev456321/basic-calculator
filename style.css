@@ -32,11 +32,11 @@ form{
     border-radius:20px;
     border:2px solid rgb(0, 0, 0);
     box-shadow:1px 1px 1px 1px grey;
-    margin-left:60px;
+    margin-left:70px;
     padding-right:10px;
     padding-top:10px;
     padding-bottom:10px;
-    padding-left:10px;
+    padding-left:15px;
     
 }
 button:hover,#modify:hover{
