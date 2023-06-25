@@ -24,7 +24,7 @@ var bracket1=document.querySelectorAll('button')[16];
 var dot=document.querySelectorAll('button')[18];
 var bracket2=document.querySelectorAll('button')[19];
 
-form.style.fontFamily='cursive'
+
 inp1.value=''
 inp2.value=''
 
