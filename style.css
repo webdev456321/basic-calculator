@@ -2,6 +2,7 @@ body{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 h1{
     font-size:3em;
@@ -10,24 +11,23 @@ h1{
     padding:30px;
     font-weight:50;
     margin-left:50px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
 }
 h1:hover{
-    transform:rotate(-10deg);
+    transform:translate3d(10px,10px,10px);
     transition:1s;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    box-shadow:2px 2px 2px 2px rgb(0, 255, 17);
+    box-shadow:2px 2px 2px 2px rgb(221, 255, 0);
     background:linear-gradient(transparent,rgb(255, 192, 192));
 }
 form{
-    font-style:italic;
-    background:linear-gradient(to left,rgba(128, 128, 128, 0.61),transparent,rgba(128, 128, 128, 0.61));
+    background:linear-gradient(20deg,rgba(128, 128, 128, 0.61),transparent,rgba(128, 128, 128, 0.61));
     border-radius:30px;
     padding-top:10px;
     box-shadow:2px 2px 2px 2px rgb(173, 153, 174);
-
+    font-family:cursive;
+    margin-top:10px;
 }
+
 .move{
     background:linear-gradient(transparent,rgba(86, 86, 86, 0.701));
     border-radius:20px;
@@ -40,6 +40,7 @@ form{
     padding-left:10px;
     
 }
+
 .move2{
     margin-left:43px;
 }
@@ -53,9 +54,7 @@ div{
 }
 footer{
     font-style:italic;
-    color:aliceblue;
+    color:rgb(110, 182, 244);
     text-align:center;
 
 }
-
-
