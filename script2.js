@@ -28,6 +28,9 @@ var bracket2=document.querySelectorAll('button')[19];
 inp1.value=''
 inp2.value=''
 
+inp1.style.fontFamily='cursive'
+inp2.style.fontFamily='cursive'
+
 
 num1.addEventListener('click',()=>{
     inp1.value=inp1.value+1
