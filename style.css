@@ -35,6 +35,8 @@ form{
     margin-left:60px;
     padding-top:10px;
     padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
     
 }
 
@@ -61,8 +63,6 @@ footer{
     padding:10px;
     padding-right:6px;
     padding-left:6px;
-    border-radius:10px;
-    transform:translatex(-20px);
     border-radius:20px;
 
 }
