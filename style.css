@@ -19,14 +19,16 @@ h1:hover{
     background:linear-gradient(transparent,rgb(255, 192, 192));
 }
 form{
-    background:linear-gradient(20deg,rgba(128, 128, 128, 0.61),transparent,rgba(128, 128, 128, 0.61));
+    /* background:linear-gradient(20deg,rgba(128, 128, 128, 0.61),transparent,rgba(128, 128, 128, 0.61)); */
     border-radius:30px;
     padding-top:10px;
     box-shadow:2px 2px 2px 2px rgb(173, 153, 174);
-/*     font-family: 'Roboto', sans-serif; */
+    font-family: 'Roboto', sans-serif;
     margin-top:10px;
 }
-
+.back{
+    background:linear-gradient(to left,transparent,rgba(175, 162, 162, 0.258),transparent);
+}
 .move{
     background:linear-gradient(transparent,rgba(86, 86, 86, 0.701));
     border-radius:20px;
@@ -58,5 +60,14 @@ footer{
     font-family:cursive;
     color:rgb(110, 182, 244);
     text-align:center;
+
+}
+#modify{
+    padding:10px;
+    padding-right:6px;
+    padding-left:6px;
+    border-radius:10px;
+    transform:translatex(-20px);
+    border-radius:20px;
 
 }
