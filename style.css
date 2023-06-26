@@ -25,6 +25,7 @@ form{
     box-shadow:2px 2px 2px 2px rgb(173, 153, 174);
     font-family: 'Roboto', sans-serif;
     margin-top:10px;
+    padding-left:10px;
 }
 
 .move{
@@ -35,14 +36,15 @@ form{
     margin-left:55px;
     padding-top:10px;
     padding-bottom:10px;
-    padding-left:10px;
-    padding-right:10px;
+    padding-left:12px;
+    padding-right:11px;
     
 }
 
 
 .move2{
     margin-left:45px;
+    padding-left:15px;
 }
 
 div{
