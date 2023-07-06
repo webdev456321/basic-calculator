@@ -107,5 +107,17 @@ de.addEventListener('click',()=>{
     inp1.value=inp1.value.slice(0,-1)
 })
 
+inp1.addEventListener('keypress',(event)=>{
+    if(event.keyCode===13){
+        event.preventDefault()
+        if(inp2.value===''){
+            inp2.value=inp2.value+'Not Possible to Calculate'
+        }
+        inp2.value=eval(inp1.value)
+
+    }
+
+ })
+
 
 
