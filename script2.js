@@ -16,9 +16,6 @@ var h1=document.querySelectorAll('div')[0];
 inp1.value=''
 inp2.value=''
 
-inp1.style.fontFamily='cursive'
-inp2.style.fontFamily='cursive'
-
 for(let i=1;i<17;i++){
     buttonPad[i].addEventListener('click',()=>{
         inp1.value=inp1.value+buttonPad[i].value

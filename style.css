@@ -2,14 +2,15 @@ body{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
 }
-h1{
-    font-size:3em;
+div{
     font-style:italic;
-    border-radius:20px;
-    padding:30px;
-    font-weight:50;
-    margin-left:45px;
+    align-self:center;
+    text-shadow:3px 1px rgba(236, 233, 233, 0.947);
+    margin-right:50px;  
+
 }
 @media screen and (max-width:600px){
     .move{
@@ -17,18 +18,16 @@ h1{
     }
 }
 form{
-    background:linear-gradient(20deg,rgba(128, 128, 128, 0.61),transparent,rgba(128, 128, 128, 0.61)); 
-    border-radius:30px;
+    background:linear-gradient(20deg,rgba(128, 128, 128, 0.61),transparent,rgba(97, 97, 97, 0.61)); 
+    border-radius:15px;
     padding-top:10px;
     box-shadow: 10px 10px 10px 10px;
-    font-family: 'Roboto', sans-serif;
     margin-top:10px;
     display:grid;
-
 }
 
 .move{
-    background:linear-gradient(transparent,rgba(86, 86, 86, 0.701));
+    background:linear-gradient(50deg,rgba(227, 230, 233, 0.361),transparent);
     border-radius:10px;
     border:1px solid rgb(0, 0, 0);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -36,28 +35,30 @@ form{
     padding-top:10px;
     padding-bottom:10px;
     padding-right:15px; 
+
 }
 
 
 .move2{
     margin-left:20px;
-    justify-self:center;
-    
+    justify-self:center;   
 }
-
-div{
-    align-self:center;
-    margin-right:50px;  
-}
-.one{
+#inp1{
     padding:10px;
+    margin-left:30px;
+    border-radius:5px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.856) 0%, rgba(255, 255, 255, 0) 100%);
+}
+#inp2{
+    padding:2px;
+    margin-left:40px;
+    border-radius:5px;
+    background-color:rgba(81, 94, 114, 0.667);
+    color:rgba(213, 255, 205, 0.703);
 }
 footer{
-    font-family:cursive;
     color:rgb(110, 182, 244);
     text-align:center;
-    padding-left:15px;
-
 }
 #modify{
     padding:10px;
