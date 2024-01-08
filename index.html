@@ -13,41 +13,41 @@
 </head>
 <body class='bg-dark bg-gradient' style="--bs-bg-opacity: .9;">
     <div>
-    <h1 style="color:rgba(0, 255, 255, 0.5);">Basic calculator</h1>
+    <h1 style="color:rgba(0, 0, 0, 0.5);">Basic calculator</h1>
 </div>
 <br><br><br><br>
 
 <form>
     <div class="move">
-     <input type="text" name="number" style="padding:10px;margin-left:40px;border-radius:10px;" ><button type="button" id='modify' >X</button>
+     <input type="text" name="number"  style="padding:10px;margin-left:40px;border-radius:10px;" ><button type="button" id='modify' >X</button>
     <br><br>
     <input type="text" name="result"  style="padding:2px;margin-left:50px;border-radius:10px;background-color:rgba(81, 94, 114, 0.667);color:rgba(213, 255, 205, 0.703);" disabled>
 
 </div>
     <br><br>
-    <div class="move2">
-    <button type="button"  class="btn btn-secondary" style="padding:20px;margin-left:25px; box-shadow:2px 2px 2px 2px grey;">1</button>
-    <button type="button" class="btn btn-secondary" style="padding:20px;box-shadow:2px 2px 2px 2px grey;">2</button>
-    <button type="button"  class="btn btn-secondary" style="padding:20px;box-shadow:2px 2px 2px 2px grey;">3</button>
-    <button type="button" class="btn btn-light" style="padding:20px; box-shadow:2px 2px 2px 2px rgb(201, 201, 201);">+</button>
-    <button type="button" class="btn btn-light" style="padding:20px;box-shadow:2px 2px 2px 2px rgb(201, 201, 201);">x</button>
+    <div style="margin-left:60px;">
+    <button type="button" value="1" class="btn btn-secondary" style="padding:20px;margin-left:25px; box-shadow:2px 2px 2px 2px grey;">1</button>
+    <button type="button" value="2" class="btn btn-secondary" style="padding:20px;box-shadow:2px 2px 2px 2px grey;">2</button>
+    <button type="button" value="3" class="btn btn-secondary" style="padding:20px;box-shadow:2px 2px 2px 2px grey;">3</button>
+    <button type="button" value="+" class="btn btn-light" style="padding:20px; box-shadow:2px 2px 2px 2px rgb(201, 201, 201);">+</button>
+    <button type="button" value="*" class="btn btn-light" style="padding:20px;box-shadow:2px 2px 2px 2px rgb(201, 201, 201);">x</button>
     <br>
-    <button type="button" class="btn btn-secondary" style="padding:20px;margin-left:25px; box-shadow:2px 2px 2px 2px grey;">4</button>
-    <button type="button" class="btn btn-secondary" style="padding:20px; box-shadow:2px 2px 2px 2px grey;">5</button>
-    <button type="button"  class="btn btn-secondary" style="padding:20px; box-shadow:2px 2px 2px 2px grey;">6</button>
-    <button type="button"  class="btn btn-light" style="padding:20px;padding-left:25px;box-shadow:2px 2px 2px 2px rgb(201, 201, 201);">-</button>
-    <button type="button"  class="btn btn-light" style="padding:20px;padding-left:22px;box-shadow:2px 2px 2px 2px rgb(201, 201, 201);">/</button>
+    <button type="button" value="4" class="btn btn-secondary" style="padding:20px;margin-left:25px; box-shadow:2px 2px 2px 2px grey;">4</button>
+    <button type="button" value="5" class="btn btn-secondary" style="padding:20px; box-shadow:2px 2px 2px 2px grey;">5</button>
+    <button type="button" value="6" class="btn btn-secondary" style="padding:20px; box-shadow:2px 2px 2px 2px grey;">6</button>
+    <button type="button" value="-" class="btn btn-light" style="padding:20px;padding-left:25px;box-shadow:2px 2px 2px 2px rgb(201, 201, 201);">-</button>
+    <button type="button" value="/" class="btn btn-light" style="padding:20px;padding-left:22px;box-shadow:2px 2px 2px 2px rgb(201, 201, 201);">/</button>
     <br>
-    <button type="button"  class="btn btn-secondary" style="padding:20px;margin-left:25px; box-shadow:2px 2px 2px 2px grey;">7</button>
-    <button type="button"  class="btn btn-secondary" style="padding:20px; box-shadow:2px 2px 2px 2px grey;">8</button>
-    <button type="button"  class="btn btn-secondary" style="padding:20px; box-shadow:2px 2px 2px 2px grey;">9</button>
-    <button type="button"  class="btn btn-secondary" style="padding:20px; box-shadow:2px 2px 2px 2px grey;">0</button>
-    <button type="button"  class="btn btn-light" style="padding: 20px;padding-right:18px;box-shadow:2px 2px 2px 2px rgb(201, 201, 201);">%</button>
+    <button type="button" value="7" class="btn btn-secondary" style="padding:20px;margin-left:25px; box-shadow:2px 2px 2px 2px grey;">7</button>
+    <button type="button" value="8" class="btn btn-secondary" style="padding:20px; box-shadow:2px 2px 2px 2px grey;">8</button>
+    <button type="button" value="9" class="btn btn-secondary" style="padding:20px; box-shadow:2px 2px 2px 2px grey;">9</button>
+    <button type="button" value="0" class="btn btn-secondary" style="padding:20px; box-shadow:2px 2px 2px 2px grey;">0</button>
+    <button type="button" value="%"class="btn btn-light" style="padding: 20px;padding-right:18px;box-shadow:2px 2px 2px 2px rgb(201, 201, 201);">%</button>
     <br>
-    <button type="button" class="btn btn-light" style="padding:20px;margin-left:25px;box-shadow:2px 2px 2px 2px rgb(201, 201, 201);">(</button>
-    <button type="button"  class="btn btn-primary" style="padding: 20px;padding-right:50px;padding-left:53px;padding-bottom:20px;box-shadow:2px 2px 2px 2px rgb(146, 181, 255);font-size:120%" title="Equal to">=</button>
-    <button type="button"  class="btn btn-light" style="padding: 20px;padding-right:22px;padding-left:22px;box-shadow:2px 2px 2px 2px rgb(201, 201, 201);">.</button>
-    <button type="button" class="btn btn-light" style="padding:20px;box-shadow:2px 2px 2px 2px rgb(201, 201, 201);">)</button>
+    <button type="button" value="(" class="btn btn-light" style="padding:20px;margin-left:25px;box-shadow:2px 2px 2px 2px rgb(201, 201, 201);">(</button>
+    <button type="button" value="=" class="btn btn-primary" style="padding: 20px;padding-right:50px;padding-left:53px;padding-bottom:20px;box-shadow:2px 2px 2px 2px rgb(146, 181, 255);font-size:120%" title="Equal to">=</button>
+    <button type="button" value="." class="btn btn-light" style="padding: 20px;padding-right:22px;padding-left:22px;box-shadow:2px 2px 2px 2px rgb(201, 201, 201);">.</button>
+    <button type="button" value=")" class="btn btn-light" style="padding:20px;box-shadow:2px 2px 2px 2px rgb(201, 201, 201);">)</button>
     <div>
     <div class="one"><input type="reset" style="padding:5px;margin-left:125px;border-radius:5px;box-shadow:2px 2px 2px 2px rgb(135, 135, 135);"></div>
     </div>

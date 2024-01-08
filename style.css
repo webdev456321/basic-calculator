@@ -10,42 +10,27 @@ h1{
     padding:30px;
     font-weight:50;
     margin-left:45px;
+    text-shadow:2px 1px;
 }
-h1:hover{
-    transform:translate3d(10px,10px,10px);
-    transition:1s;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    box-shadow:2px 2px 2px 2px rgb(221, 255, 0);
-    background:linear-gradient(transparent,rgb(255, 192, 192));
-}
+
 form{
-     background:linear-gradient(20deg,rgba(128, 128, 128, 0.61),transparent,rgba(128, 128, 128, 0.61)); 
+    background:linear-gradient(20deg,rgba(128, 128, 128, 0.61),transparent,rgba(128, 128, 128, 0.61)); 
     border-radius:30px;
     padding-top:10px;
-    box-shadow:2px 2px 2px 2px rgb(173, 153, 174);
+    box-shadow: 10px 10px 10px 10px;
     font-family: 'Roboto', sans-serif;
     margin-top:10px;
-    display:grid;
-
 }
 
 .move{
     background:linear-gradient(transparent,rgba(86, 86, 86, 0.701));
     border-radius:20px;
-    border:2px solid rgb(0, 0, 0);
-    box-shadow:1px 1px 1px 1px grey;
-    margin-left:50px;
+    border:1px solid rgb(0, 0, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left:40px;
     padding-top:10px;
     padding-bottom:10px;
-    padding-right:25px; 
-    
-}
-
-
-.move2{
-    margin-left:35px;
-    justify-self:center;
-    
+    padding-right:25px;
 }
 
 div{
@@ -59,7 +44,7 @@ footer{
     font-family:cursive;
     color:rgb(110, 182, 244);
     text-align:center;
-    padding-left:30px;
+    padding-left:10px;
 
 }
 #modify{
@@ -68,5 +53,4 @@ footer{
     padding-left:6px;
     border-radius:20px;
     margin-left:2px;
-
 }
