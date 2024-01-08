@@ -8,9 +8,7 @@ body{
 div{
     font-style:italic;
     align-self:center;
-    text-shadow:3px 1px rgba(236, 233, 233, 0.947);
     margin-right:50px;  
-
 }
 @media screen and (max-width:600px){
     .move{
