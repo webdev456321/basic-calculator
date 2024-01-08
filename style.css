@@ -10,7 +10,6 @@ h1{
     padding:30px;
     font-weight:50;
     margin-left:45px;
-    text-shadow:2px 1px;
 }
 
 form{
@@ -20,6 +19,8 @@ form{
     box-shadow: 10px 10px 10px 10px;
     font-family: 'Roboto', sans-serif;
     margin-top:10px;
+    display:grid;
+
 }
 
 .move{
@@ -27,10 +28,17 @@ form{
     border-radius:20px;
     border:1px solid rgb(0, 0, 0);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-left:40px;
+    margin-left:50px;
     padding-top:10px;
     padding-bottom:10px;
-    padding-right:25px;
+    padding-right:25px; 
+}
+
+
+.move2{
+    margin-left:35px;
+    justify-self:center;
+    
 }
 
 div{
@@ -44,7 +52,7 @@ footer{
     font-family:cursive;
     color:rgb(110, 182, 244);
     text-align:center;
-    padding-left:10px;
+    padding-left:30px;
 
 }
 #modify{
@@ -53,4 +61,6 @@ footer{
     padding-left:6px;
     border-radius:20px;
     margin-left:2px;
+
 }
+
