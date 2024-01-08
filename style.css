@@ -31,7 +31,7 @@ form{
     border-radius:10px;
     border:1px solid rgb(0, 0, 0);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-left:45px;
+    margin-left:36px;
     padding-top:10px;
     padding-bottom:10px;
     padding-right:15px; 
@@ -40,7 +40,7 @@ form{
 
 
 .move2{
-    margin-left:20px;
+    margin-left:15px;
     justify-self:center;   
 }
 #inp1{
