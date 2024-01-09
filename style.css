@@ -5,6 +5,7 @@ body{
     font-family: 'Roboto', sans-serif;
     background-repeat: no-repeat;
 }
+
 div{
     font-style:italic;
     align-self:center;
@@ -13,6 +14,11 @@ div{
 @media screen and (max-width:600px){
     .move{
         padding-right:30px;
+    }
+    .material-symbols-outlined{
+        position: absolute;
+        right:10%;
+        top:25px;
     }
 }
 form{
@@ -28,18 +34,19 @@ form{
     background:linear-gradient(50deg,rgba(227, 230, 233, 0.361),transparent);
     border-radius:10px;
     border:1px solid rgb(0, 0, 0);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.582), 0 6px 20px 0 rgba(0, 0, 0, 0.445);
     margin-left:40px;
     padding-top:10px;
     padding-bottom:10px;
     padding-right:15px; 
+    margin-bottom:30px;
 
 }
 
 
 .move2{
     margin-left:15px;
-    justify-self:center;   
+    justify-self:center; 
 }
 #inp1{
     padding:10px;
@@ -53,8 +60,8 @@ form{
     margin-left:40px;
     max-width:65%;
     border-radius:5px;
-    background-color:rgba(81, 94, 114, 0.667);
-    color:rgba(213, 255, 205, 0.703);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));    
+    color:rgb(213, 255, 205);
 }
 footer{
     color:rgb(110, 182, 244);
@@ -67,4 +74,14 @@ footer{
     border-radius:20px;
     margin-left: 6px;
 }
-
+.material-symbols-outlined{
+    transform: scale(1.2);
+    margin-left:50%;
+    margin-top:1%;
+    cursor:pointer;
+    color:grey;
+    background-color: rgb(48, 48, 147);
+    border-radius:20px;
+    padding:4px;
+    box-shadow: 0.5px 0 0 1px rgb(201, 189, 189);
+}

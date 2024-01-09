@@ -1,9 +1,11 @@
+let body=document.querySelectorAll('body')[0]
 var form=document.getElementsByTagName('form')[0];
 var inp1=document.querySelectorAll('input')[0];
 var inp2=document.getElementsByTagName('input')[1];
 
 var de=document.querySelectorAll('button')[0];
 
+let span1=document.getElementsByTagName("span")[0]
 let buttonPad=document.querySelectorAll('button');
 
 let equal=document.querySelectorAll('button')[17];
@@ -21,6 +23,25 @@ for(let i=1;i<17;i++){
         inp1.value=inp1.value+buttonPad[i].value
     })
 }
+
+span1.addEventListener('click',()=>{
+    if(span1.title==='dark'){
+        span1.textContent='light_mode'
+        span1.title='light'
+        span1.style.color='yellow'
+        span1.style.backgroundColor='rgb(221, 221, 221)'
+        body.classList.remove('bg-dark')
+        body.classList.remove('bg-gradient')
+    }
+    else{
+        span1.textContent='dark_mode'
+        span1.title='dark'
+        span1.style.color='grey'
+        span1.style.backgroundColor='rgb(48, 48, 147)'
+        body.classList.add('bg-dark')
+        body.classList.add('bg-gradient')
+    }
+})
 
 dot.addEventListener('click',()=>{
     inp1.value=inp1.value+'.'
