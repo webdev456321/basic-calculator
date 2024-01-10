@@ -41,7 +41,7 @@ span1.addEventListener('click',()=>{
         span1.style.backgroundColor='rgb(48, 48, 147)'
         body.classList.add('bg-dark')
         body.classList.add('bg-gradient')
-        inp2.style.color='color:rgb(213, 255, 205)'
+        inp2.style.color='rgb(213, 255, 205)'
     }
 })
 
