@@ -25,6 +25,7 @@ for(let i=1;i<17;i++){
 }
 
 span1.addEventListener('click',()=>{
+    body.styletransition='2s'
     if(span1.title==='dark'){
         span1.textContent='light_mode'
         span1.title='light'
