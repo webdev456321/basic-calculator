@@ -4,6 +4,7 @@ body{
     justify-content:center;
     font-family: 'Roboto', sans-serif;
     background-repeat: no-repeat;
+    overflow-x:hidden;
 }
 
 div{
@@ -13,20 +14,30 @@ div{
 }
 .heading{
     margin-bottom:20px;
+    text-align: center;
+    font-size: 2em;
+
+}
+.log{
+    margin-left:50px;
+    box-shadow: 0 0 30px 0 black;
+    position:fixed;
+    top:150px;
+    font-size:2em;
+}
+.heading a{
+    cursor:pointer;
+    text-decoration: none;
+    border-radius: 20px;
 }
 .heading h1{
     color:rgb(0, 255, 55);
     margin-left:30px;
     margin-top: 20px;
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
     .move{
         padding-right:30px;
-    }
-    .material-symbols-outlined{
-        position: absolute;
-        right:10%;
-        top:22px;
     }
 }
 form{
@@ -40,15 +51,11 @@ form{
     margin-top:12.5px;
     margin-bottom:20px;
     background:linear-gradient(20deg,grey,transparent);
-
 }
 #modify{
-    padding:10px;
-    padding-top:12px;
-    padding-bottom:12px;
     border-radius:20px;
     margin-left: 6px;
-    width:50px;
+    width:40px;
 }
 
 .move{
@@ -83,6 +90,7 @@ form{
     margin-left:30px;
     max-width:70%;
     border-radius:10px;
+    padding:10px;
     background: linear-gradient(to top, rgba(255, 255, 255, 0.856) 0%, rgba(255, 255, 255, 0) 100%);
 }
 #inp2{
@@ -96,9 +104,8 @@ form{
 
 div:last-child > *{
     border-radius: 20px;
-    box-shadow: 0px 0 0 1px red;
 }
-div:last-child > *:hover,#modify:hover{
+.last > *:hover,#modify:hover{
     opacity:0.5;
 }
 footer{
@@ -109,7 +116,7 @@ footer{
 
 .material-symbols-outlined{
     transform: scale(1.2);
-    margin-left:50%;
+    margin-left:20%;
     margin-top:1%;
     cursor:pointer;
     color:grey;

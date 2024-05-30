@@ -1,8 +1,9 @@
 let body=document.querySelectorAll('body')[0]
-var inp1=document.querySelectorAll('input')[0];
-var inp2=document.getElementsByTagName('input')[1];
-
-var de=document.querySelectorAll('button')[0];
+let form1=document.getElementsByTagName('form')[0]
+let inp1=document.querySelectorAll('input')[0];
+let inp2=document.getElementsByTagName('input')[1];
+let a1=document.getElementsByTagName('a')[0]
+let de=document.querySelectorAll('button')[0];
 
 let span1=document.getElementsByTagName("span")[0]
 let buttonPad=document.querySelectorAll('button');
@@ -11,12 +12,38 @@ let equal=document.querySelectorAll('button')[17];
 let dot=document.querySelectorAll('button')[18];
 let bracket2=document.querySelectorAll('button')[19];
 
-var res=document.querySelectorAll('input')[2];
-var h1=document.querySelectorAll('div')[0];
+let res=document.querySelectorAll('input')[2];
+let heading=document.querySelector('.heading')
+let div2=document.querySelectorAll('div')[1];
+
+let p1=document.createElement('p')
+p1.style.textAlign='center'
+p1.style.cursor='pointer'
+p1.style.borderRadius='9999px'
+p1.style.border='1px solid black'
+p1.style.color='red'
 
 inp1.value=''
 inp2.value=''
 
+a1.addEventListener('click',()=>{
+    if(div2.textContent!==""){
+        p1.textContent="X"
+        div2.appendChild(p1)
+        div2.classList.remove('d-none')
+        div2.style.zIndex='9999'
+        form1.style.transition='2s'
+        heading.style.transition='2s'
+        heading.style.transform='translateX(350%)'
+        form1.style.transform='translateX(200%)'
+    }
+
+})
+p1.addEventListener('click',()=>{
+    div2.classList.add('d-none')
+    heading.style.transform='translateX(0)'
+    form1.style.transform='translateX(0)'
+})
 for(let i=1;i<17;i++){
     buttonPad[i].addEventListener('click',()=>{
         inp1.value=inp1.value+buttonPad[i].value
@@ -58,6 +85,10 @@ equal.addEventListener('click',()=>{
         inp2.value=inp2.value+"Not possible to calculate"
     }
     inp2.value=eval(inp1.value)
+
+    let p=document.createElement('p');
+    p.textContent=inp1.value+" = "+inp2.value;
+    div2.appendChild(p)
 })
 
 res.addEventListener('click',()=>{
@@ -75,6 +106,10 @@ inp1.addEventListener('keypress',(event)=>{
             inp2.value=inp2.value+'Not Possible to Calculate'
         }
         inp2.value=eval(inp1.value)
+
+        let p=document.createElement('p');
+        p.textContent=inp1.value+" = "+inp2.value;
+        div2.appendChild(p)
 
     }
 
