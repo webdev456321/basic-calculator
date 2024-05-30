@@ -34,7 +34,9 @@ a1.addEventListener('click',()=>{
         div2.style.zIndex='9999'
         form1.style.transition='2s'
         heading.style.transition='2s'
+        heading.style.webkitTransform='translateX(350%)'
         heading.style.transform='translateX(350%)'
+        form1.style.webkitTransform='translateX(200%)'
         form1.style.transform='translateX(200%)'
     }
 
@@ -42,6 +44,10 @@ a1.addEventListener('click',()=>{
 p1.addEventListener('click',()=>{
     div2.classList.add('d-none')
     heading.style.transform='translateX(0)'
+    heading.style.webkitTransform='translateX(0%)'
+    form1.style.webkitTransform='translateX(0%)'
+
+
     form1.style.transform='translateX(0)'
 })
 for(let i=1;i<17;i++){
