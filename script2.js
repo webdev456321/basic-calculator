@@ -26,30 +26,26 @@ p1.style.color='red'
 inp1.value=''
 inp2.value=''
 
+
 a1.addEventListener('click',()=>{
     if(div2.textContent!==""){
         p1.textContent="X"
         div2.appendChild(p1)
         div2.classList.remove('d-none')
         div2.style.zIndex='9999'
-        form1.style.transition='2s'
-        heading.style.transition='2s'
-        heading.style.webkitTransform='translateX(350%)'
-        heading.style.transform='translateX(350%)'
-        form1.style.webkitTransform='translateX(200%)'
-        form1.style.transform='translateX(200%)'
+        form1.style.transition='1s'
+        heading.style.transition='1s'
+        heading.style.opacity='0'
+        form1.style.opacity='0'
     }
 
 })
 p1.addEventListener('click',()=>{
     div2.classList.add('d-none')
-    heading.style.transform='translateX(0)'
-    heading.style.webkitTransform='translateX(0%)'
-    form1.style.webkitTransform='translateX(0%)'
-
-
-    form1.style.transform='translateX(0)'
+    heading.style.opacity='1'
+    form1.style.opacity='1'
 })
+    
 for(let i=1;i<17;i++){
     buttonPad[i].addEventListener('click',()=>{
         inp1.value=inp1.value+buttonPad[i].value
