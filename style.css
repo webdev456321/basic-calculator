@@ -4,7 +4,6 @@ body{
     justify-content:center;
     font-family: 'Roboto', sans-serif;
     background-repeat: no-repeat;
-    align-items: center;
 }
 
 div{
@@ -55,16 +54,15 @@ form{
 .move{
     background:linear-gradient(50deg,rgba(227, 230, 233, 0.361),transparent);
     border-radius:10px;
-    border:1px solid rgb(0, 0, 0);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.582), 0 6px 20px 0 rgba(0, 0, 0, 0.445);
+    border:1px solid grey;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.53);
     padding-top:10px;
     padding-bottom:50px;
     padding-right:15px; 
-    margin-bottom:30px;
+    margin-bottom:10px;
     width:80%;
     justify-self:center;
     height:70%;
-
 }
 
 
