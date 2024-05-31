@@ -4,7 +4,6 @@ body{
     justify-content:center;
     font-family: 'Roboto', sans-serif;
     background-repeat: no-repeat;
-    overflow-x:hidden;
 }
 
 div{
@@ -24,6 +23,8 @@ div{
     position:fixed;
     top:150px;
     font-size:2em;
+    max-height:300px;
+    overflow-y:auto;
 }
 .heading a{
     cursor:pointer;
