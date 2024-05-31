@@ -86,7 +86,7 @@ equal.addEventListener('click',()=>{
     if(inp2.value.length===0){
         inp2.value=inp2.value+"Not possible to calculate"
     }
-    inp2.value=eval(inp1.value)
+    inp2.value=Function('return '+inp1.value)
 
     let p=document.createElement('p');
     p.textContent=inp1.value+" = "+inp2.value;
@@ -107,7 +107,7 @@ inp1.addEventListener('keypress',(event)=>{
         if(inp2.value.length===0){
             inp2.value=inp2.value+'Not Possible to Calculate'
         }
-        inp2.value=eval(inp1.value)
+        inp2.value=Function('return '+inp1.value)
 
         let p=document.createElement('p');
         p.textContent=inp1.value+" = "+inp2.value;
