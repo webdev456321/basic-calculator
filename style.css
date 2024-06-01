@@ -30,9 +30,6 @@ div{
 .log p{
 text-align:center;
 cursor:pointer;
-border-radius:9999px;
-border:1px solid black;
-color:red;
 }
 
 .heading a{
