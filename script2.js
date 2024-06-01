@@ -4,24 +4,12 @@ let inp1=document.querySelectorAll('input')[0];
 let inp2=document.getElementsByTagName('input')[1];
 let a1=document.getElementsByTagName('a')[0]
 let de=document.querySelectorAll('button')[0];
-
 let span1=document.getElementsByTagName("span")[0]
-let buttonPad=document.querySelectorAll('button');
-
 let equal=document.querySelectorAll('button')[17];
-let dot=document.querySelectorAll('button')[18];
-let bracket2=document.querySelectorAll('button')[19];
-
-let res=document.querySelectorAll('input')[2];
 let heading=document.querySelector('.heading')
 let div2=document.querySelectorAll('div')[1];
 
 let p1=document.createElement('p')
-p1.style.textAlign='center'
-p1.style.cursor='pointer'
-p1.style.borderRadius='9999px'
-p1.style.border='1px solid black'
-p1.style.color='red'
 
 inp1.value=''
 inp2.value=''
@@ -37,19 +25,20 @@ a1.addEventListener('click',()=>{
         heading.style.transition='1s'
         heading.style.opacity='0'
         form1.style.opacity='0'
+        body.style.overflow="hidden"
     }
+
 
 })
 p1.addEventListener('click',()=>{
     div2.classList.add('d-none')
     heading.style.opacity='1'
     form1.style.opacity='1'
+    body.removeAttribute('style',"overflow:hidden")
 })
-    
-for(let i=1;i<17;i++){
-    buttonPad[i].addEventListener('click',()=>{
-        inp1.value=inp1.value+buttonPad[i].value
-    })
+
+const inputValues=(val)=>{
+    inp1.value+=val
 }
 
 span1.addEventListener('click',()=>{
@@ -74,47 +63,40 @@ span1.addEventListener('click',()=>{
     }
 })
 
-dot.addEventListener('click',()=>{
-    inp1.value=inp1.value+'.'
-})
-
-bracket2.addEventListener('click',()=>{
-    inp1.value=inp1.value+')'
-})
-
-equal.addEventListener('click',()=>{
-    if(inp2.value.length===0){
-        inp2.value=inp2.value+"Not possible to calculate"
-    }
-    let result=new Function("return "+inp1.value)
-    inp2.value=result()
-
-    let p=document.createElement('p');
-    p.textContent=inp1.value+" = "+inp2.value;
-    div2.appendChild(p)
-})
-
-res.addEventListener('click',()=>{
-    inp1.value=''
-    inp2.value=''
-})
-de.addEventListener('click',()=>{
-    inp1.value=inp1.value.slice(0,-1)
-})
-
-inp1.addEventListener('keypress',(event)=>{
-    if(event.keyCode===13){
-        event.preventDefault()
-        if(inp2.value.length===0){
-            inp2.value=inp2.value+'Not Possible to Calculate'
-        }
-        let result=new Function("return "+inp1.value)
-        inp2.value=result()
+const calculations=()=>{
+    const pattern= /[0-9\s+\-*/%().]/g
+    const res=inp1.value.match(pattern)
+    if(res){
+    try{
+        let evaluation=new Function("return "+res.join(""))
+        inp2.value=evaluation()
 
         let p=document.createElement('p');
         p.textContent=inp1.value+" = "+inp2.value;
         div2.appendChild(p)
 
+        }
+        catch(e){
+            inp2.value='Not Possible to Calculate'
+        }
     }
+    else{
+        inp2.value="Invalid Expression"
+    }
+}
 
+equal.addEventListener('click',()=>{
+    calculations()
+})
+
+de.addEventListener('click',()=>{
+    inp1.value=inp1.value.slice(0,-1)
+    inp2.value=''
+})
+
+inp1.addEventListener('keydown',(event)=>{
+    if(event.key==="Enter"){
+        event.preventDefault()
+        calculations()
+    }
  })
