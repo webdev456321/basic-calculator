@@ -43,29 +43,30 @@
         </div>
         <div class="move2">
 
-            <button type="button" value="1" class="btn btn-secondary">1</button>
-            <button type="button" value="2" class="btn btn-secondary">2</button>
-            <button type="button" value="3" class="btn btn-secondary">3</button>
-            <button type="button" value="+" class="btn btn-light">+</button>
-            <button type="button" value="*" class="btn btn-light">x</button>
-            <button type="button" value="4" class="btn btn-secondary">4</button>
-            <button type="button" value="5" class="btn btn-secondary">5</button>
-            <button type="button" value="6" class="btn btn-secondary">6</button>
-            <button type="button" value="-" class="btn btn-light px-4">-</button>
-            <button type="button" value="/" class="btn btn-light">/</button>
-            <button type="button" value="7" class="btn btn-secondary">7</button>
-            <button type="button" value="8" class="btn btn-secondary">8</button>
-            <button type="button" value="9" class="btn btn-secondary">9</button>
-            <button type="button" value="0" class="btn btn-secondary">0</button>
-            <button type="button" value="%" class="btn btn-light">%</button>
-            <button type="button" value="(" class="btn btn-light">(</button>
+            <button type="button" value="1" onClick="inputValues(1)"class="btn btn-secondary">1</button>
+            <button type="button" value="2" onClick="inputValues(2)" class="btn btn-secondary">2</button>
+            <button type="button" value="3" onClick="inputValues(3)" class="btn btn-secondary">3</button>
+            <button type="button" value="+" onClick="inputValues('+')" class="btn btn-light">+</button>
+            <button type="button" value="*" onClick="inputValues('*')" class="btn btn-light">x</button>
+            <button type="button" value="4" onClick="inputValues(4)" class="btn btn-secondary">4</button>
+            <button type="button" value="5" onClick="inputValues(5)" class="btn btn-secondary">5</button>
+            <button type="button" value="6" onClick="inputValues(6)" class="btn btn-secondary">6</button>
+            <button type="button" value="-" onClick="inputValues('-')" class="btn btn-light px-4">-</button>
+            <button type="button" value="/" onClick="inputValues('/')" class="btn btn-light">/</button>
+            <button type="button" value="7" onClick="inputValues(7)" class="btn btn-secondary">7</button>
+            <button type="button" value="8" onClick="inputValues(8)" class="btn btn-secondary">8</button>
+            <button type="button" value="9" onClick="inputValues(9)" class="btn btn-secondary">9</button>
+            <button type="button" value="0" onClick="inputValues(0)" class="btn btn-secondary">0</button>
+            <button type="button" value="%" onClick="inputValues('%')" class="btn btn-light">%</button>
+            <button type="button" value="(" onClick="inputValues('(')" class="btn btn-light">(</button>
             <button type="button" value="=" class="btn btn-primary px-5" title="Equal to">=</button>
-            <button type="button" value="." class="btn btn-light px-4">.</button>
-            <button type="button" value=")" class="btn btn-light px-4">)</button>
+            <button type="button" value="." onClick="inputValues('.')" class="btn btn-light px-4">.</button>
+            <button type="button" value=")" onClick="inputValues(')')" class="btn btn-light px-4">)</button>
 
             <div class="my-3 text-center last">
                 <input type="reset" class="border-0 p-2 px-3 text-danger bg-danger-subtle" value="C">
             </div>
+            
         </div>
         <footer>Made by webdev456321</footer>
     </form>
