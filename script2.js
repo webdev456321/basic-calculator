@@ -10,6 +10,9 @@ let heading=document.querySelector('.heading')
 let div2=document.querySelectorAll('div')[1];
 
 let p1=document.createElement('p')
+p1.style.borderRadius='9999px'
+p1.style.border='1px solid black'
+p1.style.color='red'
 
 inp1.value=''
 inp2.value=''
